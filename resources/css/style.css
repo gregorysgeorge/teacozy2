@@ -2,6 +2,10 @@
 body {
     margin: 0px auto;
     background-color: white;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    
 }
 
 a {
@@ -11,16 +15,15 @@ a {
 
 h1, h2, h3, h4 {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 /*HEADER*/
     header {
-        background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
-        background-size: cover;
         height: 700px;
         margin: 0px auto;
         max-width: 100%;
+        z-index: -1;
     }
 
         div.logo {
@@ -69,12 +72,13 @@ h1, h2, h3, h4 {
     
     /*TEA*/
     .tea {
-        background-color #948ca1;
-        margin-top: 200px;
-        height: 650px;
+        background-color #948ca1
+        height: auto;
+        background-color: rgba(252,252, 252, 0.2);
     }
     
     .tea-titles {
+        margin-top: 250px;
         border-bottom: 1px solid white;
     }
 
@@ -89,19 +93,24 @@ h1, h2, h3, h4 {
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 0 150px;
+
     }
 
         .single-product {
             display: flex;
             align-items: center;
             flex-direction: column;
+            margin: 15px auto;
+            
         }
 
             .single-product img {
                 display: block;
-                padding-top: 30px;
-                height: 120px;
+                height: 150px;
+                padding: 7px;
                 overflow: hidden;
+                margin: 0px auto;
+                border-radius: 300px;
             }
 
             .single-product img:hover {
@@ -111,6 +120,9 @@ h1, h2, h3, h4 {
             .single-product span {
                 font-size: 20px;
                 padding-top: 10px;
+                padding-bottom: 10px;
+                color: white;
+                background: cornflowerblue;
             }
 
 
