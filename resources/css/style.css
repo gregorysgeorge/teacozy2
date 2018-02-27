@@ -1,10 +1,12 @@
 
 body {
     margin: 0px auto;
-    background-color: white;
+    background-color: transparent;
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
     background-size: cover;
     background-position: center;
+    height: auto;
+    background-repeat: no-repeat;
     
 }
 
@@ -78,7 +80,7 @@ h1, h2, h3, h4 {
     }
     
     .tea-titles {
-        margin-top: 250px;
+        margin-top: 270px;
         border-bottom: 1px solid white;
     }
 
@@ -104,26 +106,22 @@ h1, h2, h3, h4 {
             
         }
 
-            .single-product img {
-                display: block;
-                height: 150px;
-                padding: 7px;
-                overflow: hidden;
-                margin: 0px auto;
-                border-radius: 300px;
-            }
-
-            .single-product img:hover {
-                opacity: 0.4;
-            }
-
             .single-product span {
                 font-size: 20px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding: 30px 30px;
+                text-align: center;
                 color: white;
-                background: cornflowerblue;
+                font-style: bold;
+                background: rgba(255, 255, 255, 0.171);
+                width: 170px;
             }
+
+            .single-product:hover {
+                opacity: 0.2;
+                cursor: pointer;
+                transition-duration: 2s;
+            }
+
 
 
     
